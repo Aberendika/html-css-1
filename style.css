@@ -1,0 +1,492 @@
+*   {
+    margin: 0px;
+    padding: 0px;
+    font-family:Century;
+    }
+
+header {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+/* Meny */ 
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    min-height: 400px;
+    margin-right: 60px;
+    font-size: 17px;
+}
+
+ul li{
+    display: inline-block;
+    }
+    ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 5px 20px;
+        border: 1px solid transparent;
+        transition: 0.5s;
+    }
+    ul li a:hover {
+        background-color: aqua;
+        color: white;
+    }
+
+/* Button som används på sidan */
+
+.button1 {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.button1:hover {
+    border: 1px solid rgb(0, 255, 255);
+    background: aqua;
+    transition: 1s;
+}
+
+/* Textbox */
+
+.textbox {
+    flex-basis: 31%;
+    background: rgba(137, 207, 240, 0.3); 
+    margin-bottom: 1%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.textbox:hover{
+box-shadow: 0 0 20px 0px rgb(255, 255, 255)
+}
+
+
+/* Sidan om hem */    
+
+.indexbody {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/bakgrund.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position:center;
+    min-height: 100px;
+}
+
+.title {
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    transition: 3s;
+}
+
+.title h1 {
+    font-size: 60px;
+}
+
+.title p {
+margin: 10px 0 40px;
+font-size: 14px;
+color: white;
+}
+
+/* Media query */
+
+@media (max-width:800px) {
+
+    ul {
+        font-size: 13px;
+    }
+    ul li {
+        display: block;
+    }
+
+    
+
+    .title h1 {
+        font-size: 30px;
+    }
+    .title p {
+        font-size: 13px;
+    }
+    .button1 {
+        font-size: 12px;
+    }
+    header {
+        max-width: 20px;
+        max-height: 20px;
+        width: auto;
+    }
+    
+}
+
+@media (max-width:480px) {
+    ul {
+        font-size: 12px;
+    }
+    ul li {
+        display: block;
+    }
+    
+}
+
+/* Sidan om internet */
+
+.navinternet {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/internetbild.jpg);
+    height: 30vh;
+    background-size: cover;
+    background-position:center;
+    min-height: 100px;
+}
+
+.inth1 {
+    position: absolute;
+    width: 90%;
+    top: 20%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    transition: 1s;
+    font-size: 60px;
+    text-decoration: underline;
+}
+
+.internetmain {
+    background: black;
+    color: white;
+    font-size: 18px;
+}
+
+#analysinth3 {
+    text-align: center;
+    font-weight: 100px;
+    font-size: 33px;
+}
+
+#footerint {
+    text-align: center;
+    flex-basis: 31%;
+    background: rgb(67, 67, 172); 
+    margin-bottom: 1%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    color: #fff;
+    background-color: black;
+}
+
+.sourcelink {
+    text-decoration: underline;
+    color: white;
+    border: 1px solid transparent;
+}
+
+/* Media query */
+
+@media (max-width:800px) {
+    
+    .navinternet {
+        height: 30vh;
+    }
+
+    .inth1 {
+        font-size: 20px;
+       
+    }
+    .internetmain {
+        font-size: 15px;
+    }
+    #analysinth3 {
+        font-size: 17px;
+    }
+    #footerint {
+        font-size: 17px;
+    }
+}
+
+@media (max-width:480px) {
+    .navinternet {
+        height: 25vh;
+    }
+    .inth1 {
+        font-size: 15px;
+        
+    }
+    .internetmain {
+        font-size: 10px;
+    }
+    #analysinth3 {
+        font-size: 11px;
+    }
+    #footerint {
+        font-size: 11px;
+    }
+}
+
+/* Sidan om person */
+
+.personbody {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/spotifybild.jpg);
+    height: auto;
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+} 
+
+.danielbild {
+    height: 300px;
+    width: 300px;
+}
+  
+#personh1 {
+    text-decoration: underline;
+}
+
+#personh2 {
+    text-decoration: underline;
+}
+
+.personmain {
+    position: absolute;
+    width: 90%;
+    top: 110%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    transition: 1s;
+    font-size: 20px;
+}
+
+#video {
+    text-align: center;
+    width: 500px;
+    height: 250px;
+}
+
+.footer {
+    flex-basis: 31%;
+    background: rgba(137, 207, 240, 0.3); 
+    margin-bottom: 1%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    position: absolute;
+    width: 90%;
+    top: 230%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.footer:hover {
+    box-shadow: 0 0 20px 0px rgb(255, 255, 255);
+}
+
+/* Media query */
+
+@media (max-width: 1280px) {
+    .personmain {
+        font-size: 13px;
+    }
+    #img {
+        display: none;
+    }
+    .footerperson {
+        font-size: 14px;
+    }
+    #video {
+        height: 100px;
+        width: 300px;
+    }
+}
+
+@media (max-width:480px) {
+    .personmain {
+        font-size: 11px;
+        top: 100%;
+    }
+    .danielbild {
+    display: none;
+    }
+    .video {
+    display: none;
+    }
+    .footerperson {
+        font-size: 10px;
+        top: 170%;
+    }
+}
+
+/* Sidan om Agila metoder */
+
+.agilabody {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/agile.jpg);
+    height: 200vh;
+    background-size: cover;
+    background-position:center;
+    min-height: 100px;
+}
+
+.agilamain {
+    position: absolute;
+    width: 90%;
+    top: 110%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    transition: 3s;
+    font-size: 20px;
+}
+
+#h1agila {
+    font-size: 40px;
+}
+
+.h2agila {
+    text-decoration: underline;
+}
+
+
+/* Media query */
+
+@media (max-width: 800px) {
+    #h1agila {
+        font-size: 14px;
+    }
+    .h2agila {
+        font-size: 12px;
+    }
+    .agilamain {
+        font-size: 11px;
+        top: 125%;
+    }
+    .footer {
+        font-size: 11px;
+    }
+    .button1 {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #h1agila {
+        font-size: 12px;
+    }
+    .h2agila {
+        font-size: 10px;
+    }
+    .agilamain {
+        font-size: 9px;
+        top: 105%;
+    }
+    .footer {
+        font-size: 10px;
+    }
+    .button1 {
+        font-size: 8px;
+    }
+    .footer {
+        top: 205%;
+    }
+
+}
+
+/*Sidan om feedback */
+
+.feedbackbody {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/feedback.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position:center;
+    min-height: 100px;
+}
+
+.mainfeedback{ 
+    position: absolute;
+    width: 90%;
+    top: 55%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    transition: 1s;
+    font-size: 20px;
+}
+
+input[type=text] {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: rgba(137, 207, 240, 0.3); 
+    color: white;
+  }
+
+  ::placeholder {
+    color: white;
+  }
+
+  textarea {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: rgba(137, 207, 240, 0.3); 
+    color: white;
+  }
+
+#feedbackh1 {
+    text-decoration: underline;
+    font-size: 35px;
+}
+
+/* Media query */
+
+@media (max-width: 700px) {
+    .mainfeedback {
+        font-size: 12px;
+    }
+    input[type=text] {
+        width: 70%;
+    }
+    textarea {
+        width: 70%;
+    }
+    #feedbackh1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:480px) {
+    .mainfeedback {
+        font-size: 14px;
+        top: 60%;
+    }
+    input[type=text] {
+        width: 70%;
+    }
+    textarea { 
+        width: 70%;
+    }
+    #feedbackh1 {
+        font-size: 16px;
+    }
+}

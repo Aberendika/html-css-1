@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>  
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="feedbackbody">
+    <header> 
+        <img src="images/logo.png" alt="" width="60" height="60">
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Hem</a>
+            </li>
+            <li>
+                <a href="internet.html">Internets utveckling</a>
+            </li>
+            <li>
+                <a href="person.html">Person</a>
+            </li>
+            <li>
+                <a href="agila.html">Agila metoder</a>
+            </li>
+            <li>
+                <a href="feedback.html">Ge feedback</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="mainfeedback">
+        <section>
+            <h1 id="feedbackh1">
+                Ge din feedback om sidan!
+                <br><br>
+            </h1>
+        </section>
+        <form class="feedback">
+            <label for="fnamn">Förnamn:</label><br>
+            <input type="text" id="fnamn" name="fnamn" placeholder="Ditt förnamn.."><br>
+            <label for="enamn">Efternamn:</label><br>
+            <input type="text" id="enamn" name="enamn" placeholder="Ditt efternamn.."><br>
+            <label for="feedback">Feedback:</label><br>
+            <textarea name="feedback" id="textarea" placeholder="Skriv något.." style="height:200px"></textarea><br>
+            <button class="button1">
+                Skicka iväg din feedback
+            </button>
+          </form>
+    </main>
+</body>
+</html>
